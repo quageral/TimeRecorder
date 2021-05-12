@@ -17,3 +17,6 @@
 ## 时间线
 ### 2021/5/9
 上传了项目基本框架（ctc）
+
+## App构成要求：
+首先该app应该具备四大组件（Activity、Broadcast Receiver、Content provider、Service），另外LBS（Location based service）、震动传感器或者其他类型传感器的使用，必须要具备一个。（来自大作业要求）
