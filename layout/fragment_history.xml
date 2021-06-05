@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/table_name"
+        android:text="时间记录表"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+
+
+    <Button
+        android:id="@+id/showdailog"
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:text="2021年6月14日"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFFFFF"></Button>
+
+    <include layout="@layout/table_item"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/table_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+
+</LinearLayout>
